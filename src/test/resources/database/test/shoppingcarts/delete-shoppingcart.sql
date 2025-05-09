@@ -1,0 +1,1 @@
+delete from shopping_carts where user_id in (6, 7, 8);

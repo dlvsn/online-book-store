@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-users-to-users-table
+      author: Denys Mazurenko
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column: {name: email, value: 'bob@mail.com'}
+              - column: {name: password, value: 'testpassword2'}
+              - column: {name: first_name, value: 'Bob'}
+              - column: {name: last_name, value: 'Johnson'}
+              - column: {name: shipping_address, value: 'Kiev, 5 Boryspilska St.'}
+        - insert:
+            tableName: users
+            columns:
+              - column: {name: email, value: 'alice@mail.com'}
+              - column: {name: password, value: 'alicepassword'}
+              - column: {name: first_name, value: 'Alice'}
+              - column: {name: last_name, value: 'Jackson'}
+              - column: {name: shipping_address, value: 'Kiev, 10 Peremohy Ave.'}
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: email, value: 'john@mail.com' }
+              - column: { name: password, value: 'johnpassword' }
+              - column: { name: first_name, value: 'John' }
+              - column: { name: last_name, value: 'Biden' }
+              - column: { name: shipping_address, value: 'Kiev, 22 Lesi Ukrainky Blvd.' }
