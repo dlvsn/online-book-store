@@ -250,7 +250,7 @@ public class ShoppingCartControllerTest {
         MvcResult result = mockMvc.perform(
                 delete(CART_ITEM_ENDPOINT, TEST_ID)
                         .contentType(MediaType.APPLICATION_JSON)
-        ).andExpect(status().isOk()).andReturn();
+        ).andExpect(status().isNoContent()).andReturn();
 
         ShoppingCartResponseDto expected = initShoppingCartResponseDto(Collections.emptySet());
 

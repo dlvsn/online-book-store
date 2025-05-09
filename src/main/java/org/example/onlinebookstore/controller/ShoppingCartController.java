@@ -10,6 +10,7 @@ import org.example.onlinebookstore.dto.cartitem.UpdateCartItemRequestDto;
 import org.example.onlinebookstore.dto.shoppingcart.ShoppingCartResponseDto;
 import org.example.onlinebookstore.model.User;
 import org.example.onlinebookstore.service.shoppingcart.ShoppingCartService;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 @Tag(name = "Shopping Cart", description = "Controller for managing the user's shopping cart.")
@@ -66,6 +68,7 @@ public class ShoppingCartController {
     @Operation(summary = "Remove an item from the shopping cart",
             description = "This method allows removing an item from the user's shopping cart.")
     @DeleteMapping("/items/{cartItemId}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public ShoppingCartResponseDto deleteCartItem(Authentication authentication,
                                                   @PathVariable
                                                   @Positive
