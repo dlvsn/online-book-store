@@ -37,6 +37,8 @@ The Online Bookstore provides a wide selection of books from various genres and 
 ## Design Patterns
 - **Builder Pattern:** Used for creating complex objects with a flexible and readable syntax.
 - **Strategy Pattern:** The Strategy pattern is used to make different algorithms interchangeable, allowing for greater scalability and flexibility in the application.
+## Database structure
+![image](https://github.com/user-attachments/assets/02ba9a17-62bd-4741-a404-6d932c53cb17)
 
 # API Endpoints
 
