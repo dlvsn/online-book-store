@@ -1,16 +1,16 @@
-# Online bookstore
+# OnlyBooks
 # Project Description
-The **Online Bookstore** is a web application developed using Spring Boot and Java 17, enabling users to efficiently search for books using multiple criteria. The application is powered by a MySQL database for storing and managing book, user, and order data.
+The **OnlyBooks** is a web application developed using Spring Boot and Java 17, enabling users to efficiently search for books using multiple criteria. The application is powered by a MySQL database for storing and managing book, user, and order data.
 
 To get started, users need to register, after which they can authenticate and begin browsing books. The app allows users to add books to their cart, place orders, view past orders, and manage cart items.
 
 ## Problem Description
-The Online Bookstore addresses the following challenges that users often face:
+The 'OnlyBooks' addresses the following challenges that users often face:
 - **Limited Access to Books:** Traditional bookstores have a restricted selection, and may not offer rare or niche editions.
 - **Difficulty Finding Books:** Searching through large catalogs without effective filtering options can be overwhelming and time-consuming.
 - **Lack of Personalization:** Without tailored recommendations or advanced search filters, users might struggle to find books that meet their needs or interests.
-## How Online Bookstore Solves the Problem:
-The Online Bookstore provides a wide selection of books from various genres and categories, offering a smooth browsing experience.
+## How 'OnlyBooks' Solves the Problem:
+The 'OnlyBooks' provides a wide selection of books from various genres and categories, offering a smooth browsing experience.
 ### Key features include:
 ## Powerful Search & Filtering:
 
@@ -132,7 +132,7 @@ The Online Bookstore provides a wide selection of books from various genres and 
 - **Java 17 must be installed on your system.**
 - **MySQL should be installed and running. Ensure you have the credentials (username and password) to access your MySQL database.**
 ### Clone the Repository:
-git clone https://github.com/dlvsn/online-book-store  
+git clone https://github.com/dlvsn/only-books 
 cd <project_directory>
 ### Set Up the Database:
 - **Create a MySQL database.**
